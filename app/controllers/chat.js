@@ -7,5 +7,10 @@ module.exports.IniciaChat = function(application,req,res){
         res.render('index',{validacao : erros});
         return;
     }
-    res.render('chat');
+
+    
+
+    application.get('io').emit('MsgParaCliente',{apelido : dados.apelido ,mensagem:"Acabou de entrar no chat"});
+
+    res.render('chat',{dados:dados});
 }
