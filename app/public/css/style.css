@@ -1,6 +1,7 @@
 body {
     background-color: #444;
-    background: url('../images/login-bg.jpg');  
+    background-color: black;  
+    font-family: 'Darker Grotesque', sans-serif;
 }
 
 .form-signin input[type="text"] {
@@ -97,4 +98,50 @@ img {
 	font-size:12px;
 	padding-left:15px;
 	color:#8B7777;
+}
+
+input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].btn-block{
+    
+    width: 80%;
+   
+    margin-left: 10%;
+  
+}
+
+input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].btn-block{
+    
+    width: 80%;
+   
+    margin-left: 10%;
+  
+}
+
+.panel-login{
+    text-align:center;
+    vertical-align:middle;
+    font-size: 1.8rem;
+    margin-top: 5%;
+    color: white;
+    font-weight: 400;
+    font-family: 'Darker Grotesque', sans-serif;
+    text-shadow: 0 0 10px whitesmoke;
+}
+
+.form-control {
+    border-radius: 12px ;
+    border: none;
+   box-shadow: 0 0 10px whitesmoke;
+   
+}
+.btn{
+    background-color: #1a1a1a;
+    border: 2px solid #333333;
+    border-radius: 15px ;
+    box-shadow: 0 0 5px whitesmoke;
+}
+
+.btn:hover{
+    background-color: #333333;
+    border-color: none;
+    
 }
