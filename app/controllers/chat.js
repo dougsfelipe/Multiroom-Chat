@@ -1,6 +1,6 @@
 module.exports.IniciaChat = function(application,req,res){
     var dados = req.body;
-    req.assert('apelido','Apelido nao pode ser vazio').notEmpty();
+    req.assert('apelido','USERNAME CANNOT BE EMPTY').notEmpty();
 
     var erros = req.validationErrors();
     if(erros){

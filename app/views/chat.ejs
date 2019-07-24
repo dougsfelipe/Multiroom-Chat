@@ -15,6 +15,8 @@
 
 	<!-- estilo -->
 	<link href="css/style.css" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css?family=Raleway+Dots&display=swap" rel="stylesheet">
 
 	<script type="text/javascript">
 
@@ -44,7 +46,7 @@
 <body>
 
 
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<nav class="navbar navbar-default navbar-fixed-top navbar-dark" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1" id="btn_navbar_toggle">
@@ -53,13 +55,16 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Multiroom Chat</a>
+				<img src="images/dollars.jpg" width="50" height="50" alt="">
+				<a class="navbar-brand" href="#" style="font-family: 'Raleway Dots', cursive;font-size: 2rem;">DOLLARS</a>
 			</div>
 
 
-
-			<div class="collapse navbar-collapse" id="navbar-collapse-1">
-				<ul class="nav navbar-nav">
+			
+			<div class="collapse navbar-collapse "  id="navbar-collapse-1">
+				
+				<ul class="nav navbar-nav navbar-dark">
+						
 					<li>
 						<a href="#" id="exibe_chat">Chat</a>
 					</li>
@@ -86,9 +91,11 @@
 
 			</div>
 
-			<div class="col-md-2">
+			<div class="col-md-2" id="coluna_participante">
 
+				
 				<div class="row participantes" id="participantes" style="">
+						<center><h2>USERS</h2></center>
 					<div class="col-md-1"></div>
 					<div class="col-md-10" id="pessoas">
 
@@ -105,8 +112,10 @@
 		</div>
 	</div>
 
-	<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-		<div class="container">
+	<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation" style="background-color:black;
+    border-color: black;
+}">
+		<div class="container" style="background-color: black;width: 60%;">
 			<div class="panel-body campo-mensagem">
 
 				<div class="col-md-12">
@@ -115,7 +124,7 @@
 						<input type="hidden" id="apelido" value="<%=dados.apelido%>">
 						<input type="hidden" id="apelido_atualizado" value="0">
 						<span class="input-group-btn">
-							<button class="btn btn-default" type="button" id="enviarMensagem">></button>
+							<button class="btn btn-default" type="button" id="enviarMensagem" style="background-color: lightgray;border:none;" >SEND</button>
 						</span>
 					</div>
 				</div>
@@ -153,7 +162,7 @@
 
 			$('#dialogos').append(html);
 
-			/*window.scrollTo(0,document.body.scrollHeight);*/
+			window.scrollTo(0,document.body.scrollHeight);
 		})
 
 		socket.on('PartparaCliente', function (data) {
