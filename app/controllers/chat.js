@@ -10,7 +10,7 @@ module.exports.IniciaChat = function(application,req,res){
 
     
 
-    application.get('io').emit('MsgParaCliente',{apelido : dados.apelido ,mensagem:"Acabou de entrar no chat"});
+    application.get('io').emit('MsgParaCliente',{apelido : dados.apelido ,mensagem:"Acabou de entrar no chat",cor : dados.cor});
 
     res.render('chat',{dados:dados});
 }

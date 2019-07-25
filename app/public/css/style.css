@@ -90,6 +90,7 @@ img {
     box-shadow: 0 0 10px whitesmoke;
     border: 2px solid whitesmoke;
     opacity: 0.85;
+    margin-left: 200px;
 }
 
 .dialogo h4{
@@ -105,6 +106,27 @@ img {
 	font-size:1.8rem;
 	padding-left:15px;
 	color:white;
+}
+
+#pessoas h1{
+	font-size: 42px;
+    float: left;
+}
+
+#pessoa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+    height: 40px;
+}
+
+#pessoa span{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: bold;
 }
 
 #participantes h2{
@@ -169,9 +191,10 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 }
 
 #coluna_participante{
-    border-left: 2px solid fuchsia;
+    border-right: 2px solid lightgray;
     height: 100vh;
     background-color: #444;
+    position: fixed;
 }
 
 .container{
@@ -182,7 +205,14 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 {
     #coluna_participante
    {
-    border-top: 2px solid fuchsia;
-    border-left: none;
+    border-top: 2px solid lightgrey;
+    border-right: none;
+    position: relative;
+    height: 100%;
+   }
+
+   .dialogo{
+    margin-left: 0;
+    width: 100%;
    }
 }
