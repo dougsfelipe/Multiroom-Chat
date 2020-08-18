@@ -4,7 +4,7 @@ var app = require('./config/server');
 
 /* paramentrizando porta */
 
-var server = app.listen(80, function(S){
+var server = app.listen(process.env.PORT || 80, function(S){
     console.log('Servidor ON')
 });
 
